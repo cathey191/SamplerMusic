@@ -1,0 +1,25 @@
+.main {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.container {
+	padding: 2em;
+	background-color: #2d3436;
+	border-radius: 5px;
+	display: flex;
+}
+
+.section {
+	display: flex;
+	flex-direction: column;
+}
+
+button {
+	background-color: #636e72;
+	border-color: #b2bec3;
+	margin: 1.5em;
+}
