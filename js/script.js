@@ -1,6 +1,6 @@
 (function() {
 	var container = document.querySelector('.container');
-	var rainSound = new Audio('audio/rainFalling.wav');
+	var rainStrong = new Audio('audio/rainFalling.wav');
 	var thunderSound = new Audio('audio/thunderstorm.wav');
 
 	container.addEventListener('click', sounds, false);
@@ -20,8 +20,9 @@
 
 			// play sound
 			if (section.className === 'rain section') {
-				rainSound.play();
-				console.dir(rainSound);
+				rainStrong.play();
+				// rainMiddle.pause();
+				// rainLow.pause();
 			} else if (section.className === 'hail section') {
 
 			} else if (section.className === 'wind section') {
@@ -39,7 +40,9 @@
 
 			// play sound
 			if (section.className === 'rain section') {
-				// rainSound.play();
+				rainStrong.pause();
+				// rainMiddle.play();
+				// rainLow.pause();
 			} else if (section.className === 'hail section') {
 
 			} else if (section.className === 'wind section') {
@@ -57,7 +60,7 @@
 
 			// play sound
 			if (section.className === 'rain section') {
-
+				rainStrong.pause();
 			} else if (section.className === 'hail section') {
 
 			} else if (section.className === 'wind section') {
