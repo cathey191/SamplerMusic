@@ -23,91 +23,88 @@
 		var section = buttonVar.parentElement;
 
 		if (buttonClass === 'strong') {
-					buttonVar.style.border = '2px solid #05c46b';
-					// reset siblings
-					nextSibling.style.border = '2px solid #b2bec3';
-					nextSibling.nextElementSibling.style.border = '2px solid #b2bec3';
+			buttonVar.style.border = '2px solid #05c46b';
+			// reset siblings
+			nextSibling.style.border = '2px solid #b2bec3';
+			nextSibling.nextElementSibling.style.border = '2px solid #b2bec3';
 
-					// play sound
-					if (section.className === 'rain section') {
-									rainStrong.play();
-									rainMiddle.pause();
-									rainLow.pause();
-					} else if (section.className === 'hail section') {
-									hailStrong.play();
-									hailMiddle.pause();
-									hailLow.pause();
-					} else if (section.className === 'wind section') {
-									windStrong.play();
-									windMiddle.pause();
-									windLow.pause();
-					} else if (section.className === 'thunder section') {
-									thunderStrong.play();
-									thunderMiddle.pause();
-									thunderLow.pause();
-					}
+			// play sound
+			if (section.className === 'rain section') {
+				rainStrong.play();
+				rainMiddle.pause();
+				rainLow.pause();
+			} else if (section.className === 'hail section') {
+				hailStrong.play();
+				hailMiddle.pause();
+				hailLow.pause();
+			} else if (section.className === 'wind section') {
+				windStrong.play();
+				windMiddle.pause();
+				windLow.pause();
+			} else if (section.className === 'thunder section') {
+				thunderStrong.play();
+				thunderMiddle.pause();
+				thunderLow.pause();
+			}
 
-					//-----------------------------------------------------------------
-					// END OF STRONG
-					//-----------------------------------------------------------------
-
+			//-----------------------------------------------------------------
+			// END OF STRONG
+			//-----------------------------------------------------------------
 		} else if (buttonClass === 'middle') {
-					buttonVar.style.border = '2px solid #05c46b';
-					// reset siblings
-					previousSibling.style.border = '2px solid #b2bec3';
-					nextSibling.style.border = '2px solid #b2bec3';
+			buttonVar.style.border = '2px solid #05c46b';
+			// reset siblings
+			previousSibling.style.border = '2px solid #b2bec3';
+			nextSibling.style.border = '2px solid #b2bec3';
 
-					// play sound
-					if (section.className === 'rain section') {
-								rainMiddle.play();
-								rainStrong.pause();
-								rainLow.pause();
-					} else if (section.className === 'hail section') {
-								hailMiddle.play();
-								hailStrong.pause();
-								hailLow.pause();
-					} else if (section.className === 'wind section') {
-								windMiddle.play();
-								windStrong.pause();
-								windLow.pause();
-					} else if (section.className === 'thunder section') {
-								thunderMiddle.play();
-								thunderStrong.pause();
-								thunderLow.pause();
-					}
-					//-----------------------------------------------------------------
-					// END OF MIDDLE
-					//-----------------------------------------------------------------
+			// play sound
+			if (section.className === 'rain section') {
+				rainMiddle.play();
+				rainStrong.pause();
+				rainLow.pause();
+			} else if (section.className === 'hail section') {
+				hailMiddle.play();
+				hailStrong.pause();
+				hailLow.pause();
+			} else if (section.className === 'wind section') {
+				windMiddle.play();
+				windStrong.pause();
+				windLow.pause();
+			} else if (section.className === 'thunder section') {
+				thunderMiddle.play();
+				thunderStrong.pause();
+				thunderLow.pause();
+			}
+			//-----------------------------------------------------------------
+			// END OF MIDDLE
+			//-----------------------------------------------------------------
 		} else if (buttonClass === 'low') {
-					buttonVar.style.border = '2px solid #05c46b';
-					// reset siblings
-					previousSibling.style.border = '2px solid #b2bec3';
-					previousSibling.previousElementSibling.style.border = '2px solid #b2bec3';
+			buttonVar.style.border = '2px solid #05c46b';
+			// reset siblings
+			previousSibling.style.border = '2px solid #b2bec3';
+			previousSibling.previousElementSibling.style.border = '2px solid #b2bec3';
 
-					// play sound
-					if (section.className === 'rain section') {
-								rainLow.play();
-								rainMiddle.pause();
-								rainStrong.pause();
-					} else if (section.className === 'hail section') {
-								hailLow.play();
-								hailMiddle.pause();
-								hailStrong.pause();
-					} else if (section.className === 'wind section') {
-								windLow.play();
-								windMiddle.pause();
-								windStrong.pause();
-					} else if (section.className === 'thunder section') {
-								thunderLow.play();
-								thunderMiddle.pause();
-								thunderStrong.pause();
-					}
-
-				}
-				//-----------------------------------------------------------------
-				// END OF LOW
-				//-----------------------------------------------------------------
-
+			// play sound
+			if (section.className === 'rain section') {
+				rainLow.play();
+				rainMiddle.pause();
+				rainStrong.pause();
+			} else if (section.className === 'hail section') {
+				hailLow.play();
+				hailMiddle.pause();
+				hailStrong.pause();
+			} else if (section.className === 'wind section') {
+				windLow.play();
+				windMiddle.pause();
+				windStrong.pause();
+			} else if (section.className === 'thunder section') {
+				thunderLow.play();
+				thunderMiddle.pause();
+				thunderStrong.pause();
+			}
+		}
+		//-----------------------------------------------------------------
+		// END OF LOW
+		//-----------------------------------------------------------------
 	} // sounds function close
 
 	// iffee close
